@@ -5,7 +5,7 @@ WITH
 
 src_tracker AS (
     SELECT *
-    FROM "billiam"."staging"."daily_tracker"
+    FROM billiam.staging.daily_tracker
 ),
 
 final AS (

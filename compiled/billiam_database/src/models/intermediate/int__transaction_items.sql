@@ -5,11 +5,11 @@ WITH
 
 stg_finances AS (
     SELECT *
-    FROM "billiam"."staging"."finances"
+    FROM billiam.staging.finances
 ),
 int_transactions AS (
     SELECT *
-    FROM "billiam"."intermediate"."transactions"
+    FROM billiam.intermediate.transactions
 ),
 
 final AS (

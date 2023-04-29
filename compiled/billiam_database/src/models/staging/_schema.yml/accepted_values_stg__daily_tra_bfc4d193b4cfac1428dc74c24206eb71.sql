@@ -8,7 +8,7 @@ with all_values as (
         company as value_field,
         count(*) as n_records
 
-    from "billiam"."staging"."daily_tracker"
+    from billiam.staging.daily_tracker
     group by company
 
 )

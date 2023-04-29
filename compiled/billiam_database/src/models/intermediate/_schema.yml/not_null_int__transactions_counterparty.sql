@@ -5,7 +5,7 @@
 
 
 select counterparty
-from "billiam"."intermediate"."transactions"
+from billiam.intermediate.transactions
 where counterparty is null
 
 

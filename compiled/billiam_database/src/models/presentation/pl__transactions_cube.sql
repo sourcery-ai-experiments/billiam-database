@@ -8,7 +8,7 @@ WITH
 
 int_transaction_items AS (
     SELECT *
-    FROM "billiam"."intermediate"."transaction_items"
+    FROM billiam.intermediate.transaction_items
 ),
 
 final AS (
@@ -33,11 +33,6 @@ final AS (
         MAX(cost) AS max_cost,
         STDDEV_POP(cost) AS standard_dev_cost
     FROM int_transaction_items
-    
-    WHERE transaction_date >= (
-        SELECT MAX(transaction_date)
-        FROM "billiam"."presentation"."transactions_cube"
-    )
     
     GROUP BY CUBE(
         transaction_date,

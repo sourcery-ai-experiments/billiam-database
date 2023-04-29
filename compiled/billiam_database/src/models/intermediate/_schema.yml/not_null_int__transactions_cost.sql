@@ -5,7 +5,7 @@
 
 
 select cost
-from "billiam"."intermediate"."transactions"
+from billiam.intermediate.transactions
 where cost is null
 
 

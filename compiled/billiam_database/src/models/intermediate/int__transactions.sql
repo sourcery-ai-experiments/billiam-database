@@ -5,7 +5,7 @@ WITH
 
 stg_finances AS (
     SELECT *
-    FROM "billiam"."staging"."finances"
+    FROM billiam.staging.finances
 ),
 
 final AS (

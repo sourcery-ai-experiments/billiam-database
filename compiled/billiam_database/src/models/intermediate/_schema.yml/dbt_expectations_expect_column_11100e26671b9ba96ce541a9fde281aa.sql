@@ -13,7 +13,7 @@ counterparty not like '%||%'
  as expression
 
 
-    from "billiam"."intermediate"."transactions"
+    from billiam.intermediate.transactions
     
 
 ),
