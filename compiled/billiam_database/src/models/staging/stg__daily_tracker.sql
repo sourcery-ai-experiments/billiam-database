@@ -1,12 +1,17 @@
 
 
 
-WITH
+    
+    WITH
 
-src_tracker AS (
-    SELECT *
-    FROM "billiam"."raw"."daily_tracker"
-),
+    
+    src_tracker AS (
+        
+            
+            SELECT *
+        FROM "billiam"."raw"."daily_tracker"
+        
+    ),
 
 final AS (
     SELECT

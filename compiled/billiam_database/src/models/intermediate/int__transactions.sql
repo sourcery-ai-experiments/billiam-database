@@ -1,12 +1,18 @@
 
 
 
-WITH
 
-stg_finances AS (
-    SELECT *
-    FROM billiam.staging.finances
-),
+    
+    WITH
+
+    
+    stg_finances AS (
+        
+            
+            SELECT *
+        FROM billiam.staging.finances
+        
+    ),
 
 final AS (
     SELECT

@@ -1,12 +1,18 @@
 
 
 
-WITH
 
-src_task_details AS (
-    SELECT *
-    FROM billiam.intermediate.task_details
-),
+    
+    WITH
+
+    
+    src_task_details AS (
+        
+            
+            SELECT *
+        FROM billiam.intermediate.task_details
+        
+    ),
 
 final AS (
     SELECT

@@ -2,11 +2,10 @@
 
 
 WITH
-
-src_finances AS (
-    SELECT rowid, *
-    FROM "billiam"."raw"."finances"
-),
+    src_finances AS (
+        SELECT rowid, *
+        FROM "billiam"."raw"."finances"
+    ),
 
 final AS (
     SELECT

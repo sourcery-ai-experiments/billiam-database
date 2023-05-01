@@ -1,12 +1,18 @@
 
 
 
-WITH
 
-src_tracker AS (
-    SELECT *
-    FROM billiam.staging.daily_tracker
-),
+    
+    WITH
+
+    
+    src_tracker AS (
+        
+            
+            SELECT *
+        FROM billiam.staging.daily_tracker
+        
+    ),
 
 final AS (
     SELECT

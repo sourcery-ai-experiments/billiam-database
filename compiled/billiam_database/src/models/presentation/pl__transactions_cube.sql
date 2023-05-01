@@ -1,15 +1,22 @@
 
 
+
 /*
     Not helpful for me, but illustrates the usage
 */
 
-WITH
 
-int_transaction_items AS (
-    SELECT *
-    FROM billiam.intermediate.transaction_items
-),
+    
+    WITH
+
+    
+    int_transaction_items AS (
+        
+            
+            SELECT *
+        FROM billiam.intermediate.transaction_items
+        
+    ),
 
 final AS (
     SELECT
