@@ -5,17 +5,11 @@
     Not helpful for me, but illustrates the usage
 */
 
-
-    
-    WITH
-
-    
+WITH
     int_transaction_items AS (
-        
-            
-            SELECT *
+        SELECT 
+          /* no columns returned from star() macro */
         FROM billiam.intermediate.transaction_items
-        
     ),
 
 final AS (

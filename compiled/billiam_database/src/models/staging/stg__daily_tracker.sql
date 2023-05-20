@@ -1,16 +1,10 @@
 
 
-
-    
-    WITH
-
-    
+WITH
     src_tracker AS (
-        
-            
-            SELECT *
+        SELECT 
+          /* no columns returned from star() macro */
         FROM "billiam"."raw"."daily_tracker"
-        
     ),
 
 final AS (

@@ -1,17 +1,11 @@
 
 
 
-
-    
-    WITH
-
-    
+WITH
     src_tracker AS (
-        
-            
-            SELECT *
+        SELECT 
+          /* no columns returned from star() macro */
         FROM billiam.staging.daily_tracker
-        
     ),
 
 final AS (

@@ -1,24 +1,16 @@
 
 
 
-
-    
-    WITH
-
-    
+WITH
     stg_finances AS (
-        
-            
-            SELECT *
+        SELECT 
+          /* no columns returned from star() macro */
         FROM billiam.staging.finances
-        
     ),
     int_transactions AS (
-        
-            
-            SELECT *
+        SELECT 
+          /* no columns returned from star() macro */
         FROM billiam.intermediate.transactions
-        
     ),
 
 final AS (

@@ -5,24 +5,16 @@
 */
 
 
-
-    
-    WITH RECURSIVE
-
-    
+WITH RECURSIVE
     src_transactions AS (
-        
-            
-            SELECT *
+        SELECT 
+          /* no columns returned from star() macro */
         FROM billiam.intermediate.transaction_items
-        
     ),
     src_tracker AS (
-        
-            
-            SELECT *
+        SELECT 
+          /* no columns returned from star() macro */
         FROM billiam.staging.daily_tracker
-        
     ),
 
 date_dim AS (

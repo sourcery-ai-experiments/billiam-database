@@ -1,17 +1,11 @@
 
 
 
-
-    
-    WITH
-
-    
+WITH
     src_task_details AS (
-        
-            
-            SELECT *
+        SELECT 
+          /* no columns returned from star() macro */
         FROM billiam.intermediate.task_details
-        
     ),
 
 final AS (
