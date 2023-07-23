@@ -1,17 +1,16 @@
 
 
-
 WITH
     src_finances AS (
-        SELECT rowid, *
-        FROM "billiam"."raw"."finances"
+        SELECT *
+        FROM 'src/models/source/finances.csv'
     ),
 
 final AS (
     SELECT
-        rowid + 1 AS row_id,  /* Just for maintaining uniqueness */
+        ROW_NUMBER() OVER() AS row_id,  /* Just for maintaining uniqueness */
         "Transaction"::INT AS transaction_id,
-        STRPTIME("Date", '%d/%m/%Y')::DATE AS transaction_date,
+        "Date"::DATE AS transaction_date,
         TRIM(Item) AS item,
         TRANSLATE(Cost, '£,', '')::DECIMAL(18, 2) AS cost,
         TRIM(Category) AS category,

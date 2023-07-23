@@ -4,7 +4,7 @@ WITH
     src_tracker AS (
         SELECT 
           /* no columns returned from star() macro */
-        FROM "billiam"."raw"."daily_tracker"
+        FROM 'src/models/source/daily_tracker.csv'
     ),
 
 final AS (
