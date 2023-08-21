@@ -3,7 +3,7 @@
 WITH
     src_finances AS (
         SELECT *
-        FROM 'src/models/source/finances.csv'
+        FROM 'billiam_database/models/source/finances.csv'
     ),
 
 final AS (

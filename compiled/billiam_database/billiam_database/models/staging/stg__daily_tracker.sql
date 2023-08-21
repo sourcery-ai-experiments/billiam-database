@@ -4,7 +4,7 @@ WITH
     src_tracker AS (
         SELECT 
           /* no columns returned from star() macro */
-        FROM 'src/models/source/daily_tracker.csv'
+        FROM 'billiam_database/models/source/daily_tracker.csv'
     ),
 
 final AS (
@@ -12,7 +12,7 @@ final AS (
         date_time::TIMESTAMP AS date_time,
         TRIM(task) AS task,
         COALESCE(TRIM(detail), '') AS detail,
-        interval::INTEGER AS interval,
+        "interval"::INTEGER AS interval,
         TRIM(company) AS company
     FROM src_tracker
 )
