@@ -1,5 +1,6 @@
 
 
+
 WITH
     src_finances AS (
         SELECT *

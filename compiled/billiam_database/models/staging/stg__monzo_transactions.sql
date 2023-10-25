@@ -1,5 +1,6 @@
 
 
+
 WITH
     src_monzo_transactions AS (
         SELECT *
