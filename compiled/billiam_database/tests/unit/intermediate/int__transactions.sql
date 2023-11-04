@@ -1,6 +1,4 @@
-
-
- -- depends_on: "stg__finances"
+-- depends_on: "stg__finances"
 
 
 
