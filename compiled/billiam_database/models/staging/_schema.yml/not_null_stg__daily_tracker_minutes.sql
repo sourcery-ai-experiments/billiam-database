@@ -4,8 +4,8 @@
 
 
 
-select task
+select minutes
 from billiam.staging.daily_tracker
-where task is null
+where minutes is null
 
 

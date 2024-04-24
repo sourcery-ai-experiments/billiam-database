@@ -4,8 +4,8 @@
 
 
 
-select interval
+select project
 from billiam.staging.daily_tracker
-where interval is null
+where project is null
 
 
