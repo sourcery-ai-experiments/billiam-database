@@ -1,11 +1,12 @@
 
 
 
-WITH
-    stg_tracker AS (
-        SELECT 
+
+    with recursive
+    stg_tracker as (
+        select 
           /* no columns returned from star() macro */
-        FROM billiam.staging.daily_tracker
+        from billiam.staging.daily_tracker
     ),
 
 final as (

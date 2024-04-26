@@ -1,11 +1,12 @@
 
 
 
-WITH
-    stg_finances AS (
-        SELECT 
+
+    with recursive
+    stg_finances as (
+        select 
           /* no columns returned from star() macro */
-        FROM billiam.staging.finances
+        from billiam.staging.finances
     ),
 
 final as (

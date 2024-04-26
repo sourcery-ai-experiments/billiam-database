@@ -1,18 +1,14 @@
 
-
-
-
-
-WITH RECURSIVE
-    stg_finances AS (
-        SELECT 
+    with recursive
+    stg_finances as (
+        select 
           /* no columns returned from star() macro */
-        FROM billiam.staging.finances
+        from billiam.staging.finances
     ),
-    stg_monzo_transactions AS (
-        SELECT 
+    stg_monzo_transactions as (
+        select 
           /* no columns returned from star() macro */
-        FROM billiam.staging.monzo_transactions
+        from billiam.staging.monzo_transactions
     ),
 
 my_txns AS (
